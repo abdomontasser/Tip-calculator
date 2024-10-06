@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip calculator</title>
+</head>
+<body>
+  <div class="main">
+    <div class="sub-main">
+      <div class="left">
+        <div class="Bill">
+          <label for="Bill">Bill</label>
+          <input type="number" placeholder="$" required dir="rtl" id="Bill-check">
+        </div>
+          <div class="tipSelection">
+            <p>Select Tip %</p>
+            <div class="tipbuttons">
+              <button class="BtnTip">5%</button>
+              <button class="BtnTip">10%</button>
+              <button class="BtnTip">15%</button>
+              <button class="BtnTip">25%</button>
+              <button class="BtnTip">50%</button>
+              <button class="BtnTip" id >Custom</button>
+            </div>
+          </div>
+          <div class="peoples-count">
+            <label for="Bill">number of people</label>
+            <input type="number" placeholder="" required dir="rtl" id="people-number">
+          </div>
+      </div>
+      <div class="right">
+        <div class="Total">
+          <div class="Tip-amount">
+            <p>Tip amount/person</p>
+            <span id="Tip-person">$0.00</span>
+          </div>
+          <div class="Total-person">
+            <p>Total/person</p>
+            <span id="person-total">$0.00</span>
+          </div>
+          <div class="button-reset">
+            <button id="reset-Bill">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

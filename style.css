@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root
+{
+    --Very_dark_cyan: hsl(183, 100%, 15%);
+    --Dark_grayish_cyan:hsl(186, 14%, 43%);
+    --Grayish_cyan: hsl(184, 14%, 56%);
+    --Light_grayish_cyan: hsl(185, 41%, 84%);
+     --Very_light_grayish_cyan: hsl(189, 41%, 97%);
+     --White: hsl(0, 0%, 100%);
+     --Strong_cyan: hsl(172, 67%, 45%);
+}
+
+body
+{
+    background-color: var(--Strong_cyan);
+    padding: 0;
+    margin: 0;
+    font-family: "Space Mono", monospace;
+}
+.main {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+.sub-main {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: var(--White);
+    width: 40%;
+    height: 45vh;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.Bill {
+    display: flex;
+    flex-direction: column; 
+    margin: 10px 23px;
+}
+
+.Bill label {
+    margin-bottom: 5px; 
+}
+
+.Bill input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.Bill input:focus
+{
+    outline: none;
+    border: 1px solid var(--Strong_cyan);
+}
+.tipSelection
+{
+    margin-top: 10px;
+    padding: 10px;
+}
+.tipbuttons
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 15px;
+}
+.BtnTip
+{
+    background-color: var(--Very_dark_cyan);
+    padding: 8px 22px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease-in-out all;
+}
+.peoples-count
+{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 23px;
+}
+.peoples-count label
+{
+    margin-bottom: 5px;
+}
+.peoples-count input
+{
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+.Total
+{
+    background-color: var(--Very_dark_cyan);
+    width: calc(100%-5%);
+    height:44vh;
+    margin-left:15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.Tip-amount
+{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+.Tip-amount p
+{
+    color: var(--White);
+} 
+.Tip-amount span
+{
+    font-size: 30px;
+    color: var(--Strong_cyan);
+} 
+.Total-person
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+.Total-person p
+{
+  color: var(--White);
+}
+.Total-person span
+{
+    color: var(--Strong_cyan);
+}
+.Total-person span
+{
+    font-size: 30px;
+}
+.button-reset
+{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-bottom:20px;
+}
+.button-reset button
+{
+    width:75%;
+    padding:8px 30px;
+    background-color: var(--Strong_cyan);
+    color: var(--Dark_grayish_cyan);
+    border-radius:10px;
+    outline: none;
+    cursor:pointer;
+    font-size: 17px;
+    border: none;
+}
+.peoples-count input:focus
+{
+    outline: none;
+    border: 1px solid var(--Strong_cyan);
+}
+.BtnTip:hover
+{
+    color: var(--Grayish_cyan);
+}
+
+.unvalid
+{
+    border: 1px solid red;
+}
+.selected
+{
+   background-color: var(--Strong_cyan);
+    outline: none;
+    color: var(--Very_dark_cyan); 
+}
+
